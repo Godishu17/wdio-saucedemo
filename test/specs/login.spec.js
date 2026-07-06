@@ -16,7 +16,7 @@ describe('Login test', () => {
         if (url.includes('inventory')) {
             console.log('LOGIN SUCCESS')
         }
-        await browser.pause(1п0000)
+        await browser.pause(10000)
 
 
     })
