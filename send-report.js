@@ -1,14 +1,19 @@
 import dotenv from 'dotenv';
 dotenv.config();
 import axios from 'axios';
-import fs from 'fs';
 
 const TOKEN = process.env.TOKEN;
 const CHAT_ID = process.env.CHAT_ID;
 
-// Читаем данные из упавшего теста, если нужно, но пока отправим простую алерту
 async function sendToTelegram() {
-    const message = `🚀 *Тесты WebdriverIO завершены!*\n📊 Посмотреть отчет локально: \`npx allure serve allure-results\``;
+    const reportUrl = 'https://godishu17.github.io/wdio-saucedemo/';
+
+    const message = `
+🚀 *Тесты WebdriverIO завершены!*
+
+📊 *Allure Report:*
+${reportUrl}
+`;
 
     try {
         await axios.post(
