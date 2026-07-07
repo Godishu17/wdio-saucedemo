@@ -9,9 +9,9 @@ async function sendToTelegram() {
     const reportUrl = 'https://godishu17.github.io/wdio-saucedemo/';
 
     const message = `
-🚀 *Тесты WebdriverIO завершены!*
+ *Тесты WebdriverIO завершены!*
 
-📊 *Allure Report:*
+ *Allure Report:*
 ${reportUrl}
 `;
 
