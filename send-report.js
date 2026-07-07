@@ -24,9 +24,9 @@ ${reportUrl}
                 parse_mode: 'Markdown'
             }
         );
-        console.log('✅ Уведомление улетело в телегу!');
+        console.log('Уведомление ушло в телегу!');
     } catch (error) {
-        console.error('❌ Ошибка отправки:', error.message);
+        console.error('Ошибка отправки:', error.message);
     }
 }
 
