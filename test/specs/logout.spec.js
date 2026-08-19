@@ -9,6 +9,9 @@ describe('Login test', () => {
             'secret_sauce'
         )
 
+        await LoginPage.burgerMenu.click()
+        await LoginPage.logoutButton.click()
+
         const url = await browser.getUrl()
 
         console.log(url)
