@@ -55,6 +55,67 @@ class LoginPage {
         return $('[data-test="social-linkedin"]')
     }
 
+    get checkoutBtn() {
+        return $('[data-test="checkout"]')
+    }
+
+    get firstNameInput() {
+        return $('[data-test="firstName"]')
+    }
+
+    get lastNameInput() {
+        return $('[data-test="lastName"]')
+    }
+
+    get postalCodeInput() {
+        return $('[data-test="postalCode"]')
+    }
+
+    get continueBtn() {
+        return $('[data-test="continue"]')
+    }
+
+    get finishBtn() {
+        return $('[data-test="finish"]')
+    }
+
+    get backHomeBtn() {
+        return $('[data-test="back-to-products"]')
+    }
+
+    get cartLink() {
+        return $('[data-test="shopping-cart-link"]')
+    }
+
+    get checkoutTitle() {
+        return $('[data-test="title"]')
+    }
+
+    get checkoutProductName() {
+        return $('[data-test="inventory-item-name"]')
+    }
+
+    get checkoutProductPrice() {
+        return $('[data-test="inventory-item-price"]')
+    }
+
+    get itemSubtotal() {
+        return $('[data-test="subtotal-label"]')
+    }
+
+    get tax() {
+        return $('[data-test="tax-label"]')
+    }
+
+    get total() {
+        return $('[data-test="total-label"]')
+    }
+
+    get completeHeader() {
+        return $('[data-test="complete-header"]')
+    }
+
+
 
     async open() {
         await browser.url('https://www.saucedemo.com')
