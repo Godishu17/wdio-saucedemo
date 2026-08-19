@@ -31,6 +31,30 @@ class LoginPage {
         return $('[data-test="inventory-item-name"]')
     }
 
+    get sortingDropdown(){
+        return $('[data-test="product-sort-container"]')
+    }
+
+    get productNames() {
+        return $$('[data-test="inventory-item-name"]')
+    }
+
+    get productPrices() {
+        return $$('[data-test="inventory-item-price"]')
+    }
+
+    get twitterLink (){
+        return $('[data-test="social-twitter"]')
+    }
+
+    get facebookLink() {
+        return $('[data-test="social-facebook"]')
+    }
+
+    get linkedinLink() {
+        return $('[data-test="social-linkedin"]')
+    }
+
 
     async open() {
         await browser.url('https://www.saucedemo.com')
