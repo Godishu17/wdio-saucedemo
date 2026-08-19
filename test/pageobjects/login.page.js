@@ -19,6 +19,18 @@ class LoginPage {
         return $('//a[@id="logout_sidebar_link"]')
     }
 
+    get addToCartButton() {
+        return $('[data-test="add-to-cart-sauce-labs-bike-light"]')
+    }
+
+    get cartButton(){
+        return $('[data-test="shopping-cart-link"]')
+    }
+
+    get cartItem(){
+        return $('[data-test="inventory-item-name"]')
+    }
+
 
     async open() {
         await browser.url('https://www.saucedemo.com')
