@@ -12,7 +12,7 @@ describe('Checkout without products', () => {
 
         await LoginPage.checkoutBtn.click()
 
-        await expect(LoginPage.checkoutTitle).toBeDisplayed()
+        await expect(LoginPage.checkoutTitle).not.toBeDisplayed()
 
     })
 
